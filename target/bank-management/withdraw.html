@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Withdraw | Northstar Bank</title><link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script></head>
+<body class="app-page">
+<header class="app-header"><a class="brand" href="dashboard.html"><span class="brand-mark">N</span><span>Northstar <small>Bank</small></span></a><div class="user-summary"><span class="avatar" data-initials>N</span><span><small>Signed in as</small><b data-user-name>Customer</b></span><button class="button button-quiet button-small" data-logout>Sign out</button></div></header>
+<div class="app-layout"><aside class="sidebar" id="app-nav"></aside><main class="app-main">
+    <div class="page-heading"><span class="eyebrow">MOVE MONEY</span><h1>Make a withdrawal</h1><p>Withdraw funds from your available balance.</p></div>
+    <section class="content-card narrow-card"><div class="form-context"><span class="context-icon">↗</span><span><small>WITHDRAWING FROM</small><b data-account-number>Loading account…</b></span></div>
+        <div class="available-box"><span>Available balance</span><b data-balance>Loading…</b></div>
+        <form data-form="withdraw" novalidate><div class="field"><label for="amount">Amount (₹)</label><input id="amount" name="amount" type="number" min="0.01" max="9999999999999.99" step="0.01" placeholder="0.00" required><small>Withdrawal cannot exceed your available balance.</small></div><p class="form-message" role="status" aria-live="polite"></p><button class="button button-primary button-full" type="submit">Confirm withdrawal <span aria-hidden="true">→</span></button></form>
+    </section>
+</main></div><footer class="app-footer">© 2026 Northstar Bank <span>Student project demonstration · Not a real banking service</span></footer>
+</body></html>
